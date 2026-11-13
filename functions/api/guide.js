@@ -13,5 +13,5 @@ export async function onRequestPost({ request, env }) {
   });
   const j = await r.json().catch(() => ({}));
   const text = j?.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
-  return new Response(JSON.stringify({ text }), { status: text ? 200 : 502, headers: { 'Content-Type': 'application/json' } });
+  return new Response(JSON.stringify(text ? { text } : { text: '', err: (j?.error?.message || j?.candidates?.[0]?.finishReason || 'no reply').slice(0, 200), hasKey: !!env.GEMINI_KEY }), { status: text ? 200 : 502, headers: { 'Content-Type': 'application/json' } });
 }
