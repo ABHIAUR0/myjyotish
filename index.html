@@ -34,6 +34,9 @@ body{background:var(--bg);color:var(--ink);font:15px/1.55 Inter,system-ui,sans-s
 .wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:18px 16px 60px}
 header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
 .logo{width:46px;height:46px;flex:none}
+.logo .wheel{transform-box:view-box;transform-origin:32px 32px;animation:wheelSpin 24s linear infinite}
+@keyframes wheelSpin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.logo .wheel{animation:none}}
 .brand h1{font:700 28px/1.1 'Cinzel Decorative','Cinzel',serif;margin:0;letter-spacing:2px;background:linear-gradient(100deg,#b8862b 0%,#f7e2a3 28%,#d9a441 50%,#fff1c4 70%,#b8862b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 :root[data-theme="light"] .brand h1{background:linear-gradient(100deg,#7a5108 0%,#b8862b 35%,#8c5f0c 60%,#c9952f 80%,#7a5108 100%);-webkit-background-clip:text;background-clip:text}
 .brand p{margin:3px 0 0;color:var(--ink3);font-size:12.5px}
@@ -170,8 +173,8 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
 <div class="wrap">
 <header>
   <svg class="logo" viewBox="0 0 64 64"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#e3b04b"/><stop offset="1" stop-color="#ff8a3d"/></linearGradient></defs>
-  <circle cx="32" cy="32" r="29" fill="none" stroke="url(#lg)" stroke-width="2"/>
-  <g stroke="url(#lg)" stroke-width="1.2" fill="none"><path d="M32 6v52M6 32h52M13.6 13.6l36.8 36.8M50.4 13.6L13.6 50.4"/></g>
+  <g class="wheel"><circle cx="32" cy="32" r="29" fill="none" stroke="url(#lg)" stroke-width="2"/>
+  <g stroke="url(#lg)" stroke-width="1.2" fill="none"><path d="M32 6v52M6 32h52M13.6 13.6l36.8 36.8M50.4 13.6L13.6 50.4"/></g></g>
   <circle cx="32" cy="32" r="11" fill="url(#lg)"/><text x="32" y="37" text-anchor="middle" font-family="Tiro Devanagari Sanskrit" font-size="14" fill="#1a1206">ॐ</text></svg>
   <div class="brand"><h1>MyJyotish</h1><p>Vedic astrology engine · rules from Parashara, Kannan, Phaladeepika, Raman, Varahamihira and Vasudev; library of 11 classical books</p></div>
   <div class="hdr-actions"><span id="quotaBadge" class="pill ex" style="align-self:center"></span>
