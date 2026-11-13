@@ -231,7 +231,7 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
   </nav>
 
   <section class="view on" id="v-kundli"><div class="card" id="kundliBox"><div class="empty"><div class="om">ॐ</div><p>Enter your birth details and press <b>Cast chart</b>.</p></div></div></section>
-  <section class="view" id="v-read"><div class="card" id="readBox"><div class="empty"><div class="om">ॐ</div><p>Cast a chart first. Each placement will then be read from Kannan's text.</p></div></div></section>
+  <section class="view" id="v-read"><div class="card" id="readBox"><div class="empty"><div class="om">ॐ</div><p>Cast a chart first. Each placement will then be read by the classical rules.</p></div></div></section>
   <section class="view" id="v-dasha"><div class="card" id="dashaBox"><div class="empty"><div class="om">ॐ</div><p>Cast a chart to see your Vimshottari periods.</p></div></div></section>
   <section class="view" id="v-ask">
     <div class="card chat">
@@ -254,14 +254,14 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
   </section>
   <section class="view" id="v-dates"><div class="card">
     <h2>Good Dates (Muhurta)</h2>
-    <p class="muted">Pick what you plan to do. Each day is checked against Raman's <i>Muhurtha</i> rules for that activity and against your own birth star and Moon sign, so cast your chart first.</p>
+    <p class="muted">Pick what you plan to do. Each day is checked against the classical Muhurta rules for that activity and against your own birth star and Moon sign, so cast your chart first.</p>
     <div class="row2"><div><label>What do you plan to do?</label><select id="mAct"></select></div><div><label>Your current city</label><input id="mCity" list="cityList" placeholder="e.g. Murshidabad"><datalist id="cityList"></datalist></div></div>
     <div class="row2"><div><label>From date (or the exact date to check)</label><input id="mDate" type="date"></div><div><label>Search range</label><select id="mDays"><option value="30">Next 30 days</option><option value="60" selected>Next 60 days</option><option value="90">Next 90 days</option></select></div></div>
     <div class="flex" style="margin-top:12px"><button class="btn gold" id="mFind">✦ Find best dates</button><button class="btn" id="mCheck">Check this date only</button></div>
     <div id="mOut" style="margin-top:14px"></div></div></section>
   <section class="view" id="v-match"><div class="card">
     <h2>Match Kundli (Kundli Milan)</h2>
-    <p class="muted">Enter both people's birth details. The match uses Raman's 12 kootas (36 points) plus Rajju and Vedha, with the book's exceptions.</p>
+    <p class="muted">Enter both people's birth details. The match uses the classical 12 kootas (36 points) plus Rajju and Vedha, with the book's exceptions.</p>
     <div class="row2">
      <div><h3>Groom</h3><label>Pick a saved person</label><select id="bPick"></select><label>Name</label><input id="bName" placeholder="e.g. Vishal"><label>Date of birth</label><input id="bDate" type="date"><label>Time of birth</label><input id="bTime" type="time"><label>Birth city (or lat,lon)</label><input id="bCity" list="cityList"></div>
      <div><h3>Bride</h3><label>Pick a saved person</label><select id="gPick"></select><label>Name</label><input id="gName" placeholder="e.g. Madhuri"><label>Date of birth</label><input id="gDate" type="date"><label>Time of birth</label><input id="gTime" type="time"><label>Birth city (or lat,lon)</label><input id="gCity" list="cityList"></div></div>
@@ -274,7 +274,7 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
     <p class="big" style="font-size:16.5px">MyJyotish is a Vedic astrology guide for everyone. It answers your questions about marriage, career, money, health, property, children, travel, good dates and kundli matching in simple words. Every answer is worked out <b>only from the rules of classical astrology books</b>, explained in MyJyotish's own words, and the book and chapter for each rule are shown.</p>
     <h3>Developed by Gita Sarathi Ventures</h3>
     <h3>Classical references</h3>
-    <ul class="simple"><li>📘 S. Kannan, <i>Fundamentals of Hindu Astrology</i></li><li>📘 Maharishi Parashara, <i>Brihat Parashara Hora Shastra</i></li><li>📘 Mantreswara, <i>Phaladeepika</i></li><li>📘 B.V. Raman, <i>How to Judge a Horoscope</i> (Vol. 1 &amp; 2), <i>Three Hundred Important Combinations</i> and <i>Muhurtha</i></li><li>📘 Varahamihira, <i>Brihat Jataka</i></li><li>📘 Panangadu Nambudhiri, <i>Prasna Marga</i></li><li>📘 Chennareddy Vasudev, <i>Astrology</i> (remedies)</li><li>📚 Studied for reference: <i>Saravali</i>, <i>Jataka Parijata</i>, <i>Uttara Kalamrita</i></li></ul>
+    <ul class="simple"><li>📘 Maharishi Parashara, <i>Brihat Parashara Hora Shastra</i></li><li>📘 Mantreswara, <i>Phaladeepika</i></li><li>📘 Varahamihira, <i>Brihat Jataka</i></li><li>📘 Panangadu Nambudhiri, <i>Prasna Marga</i></li><li>📘 Kalyana Varma, <i>Saravali</i> · Vaidyanatha Dikshita, <i>Jataka Parijata</i> · Kalidasa, <i>Uttara Kalamrita</i></li><li>📘 Traditional Muhurta and remedy (upaya) teachings of Jyotish</li></ul>
     <h3>Our promise</h3>
     <ul class="simple"><li>✅ No made-up predictions: every point comes from a book rule, with its source.</li><li>✅ Honest and kind: good and difficult points are both stated plainly.</li><li>✅ No fear: MyJyotish never predicts death, and it does not show yogas linked to death, crime or disease.</li><li>✅ Your data stays on your device: birth details are saved only in your own browser.</li></ul>
     <p class="muted small">Astrology is guidance, not certainty. Results depend on an exact birth time and place. For health, legal or money decisions, please also consult a qualified professional.</p>
@@ -285,17 +285,16 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
   </div></section>
   <section class="view" id="v-lib"><div class="card">
     <h2>Sources</h2>
-    <p class="muted">MyJyotish's answers are built from the rules in these classical works. The rules are explained in MyJyotish's own words, and each answer cites the book and chapter it comes from. The books' texts are not reproduced in the app: they belong to their authors, translators and publishers, and we encourage you to buy them.</p>
-    <div style="overflow-x:auto"><table><tr><th>Work</th><th>Used for</th></tr>
-    <tr><td>S. Kannan, <i>Fundamentals of Hindu Astrology</i></td><td>House rules, marriage, planetary periods, transits, horary, planet tables</td></tr>
-    <tr><td>Maharishi Parashara, <i>Brihat Parashara Hora Shastra</i></td><td>Results of house rulers</td></tr>
+    <p class="muted">MyJyotish's answers are built from the principles of classical Jyotish. The rules are explained in MyJyotish's own words; no text from any book is reproduced in the app. Titles are given only as references.</p>
+    <div style="overflow-x:auto"><table><tr><th>Classical work</th><th>Used for</th></tr>
+    <tr><td>Maharishi Parashara, <i>Brihat Parashara Hora Shastra</i></td><td>Houses, house rulers, planetary periods</td></tr>
     <tr><td>Mantreswara, <i>Phaladeepika</i></td><td>General house rules</td></tr>
-    <tr><td>B.V. Raman, <i>How to Judge a Horoscope</i> (Vol. 1 &amp; 2)</td><td>Results of house rulers</td></tr>
-    <tr><td>B.V. Raman, <i>Three Hundred Important Combinations</i></td><td>Yogas</td></tr>
-    <tr><td>B.V. Raman, <i>Muhurtha</i></td><td>Good dates and kundli matching</td></tr>
     <tr><td>Varahamihira, <i>Brihat Jataka</i></td><td>Kind of work that suits you</td></tr>
     <tr><td>Panangadu Nambudhiri, <i>Prasna Marga</i></td><td>Prashna (questions answered from the moment)</td></tr>
-    <tr><td>Chennareddy Vasudev, <i>Astrology</i></td><td>Remedies</td></tr>
+    <tr><td><i>Saravali</i>, <i>Jataka Parijata</i>, <i>Uttara Kalamrita</i></td><td>Studied for reference</td></tr>
+    <tr><td>Traditional yoga combinations</td><td>Yogas</td></tr>
+    <tr><td>Traditional Muhurta teachings</td><td>Good dates and kundli matching</td></tr>
+    <tr><td>Traditional upaya (remedy) teachings</td><td>Remedies</td></tr>
     </table></div></div></section>
 </main>
 </div>
@@ -313,7 +312,7 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
 <div class="toast" id="toast"></div>
 
 <script>
-window.BOOK={"chapters": [], "house": {}, "extra": {}, "raman": {}, "bphs": {}, "pd": {}, "houseCh": {"1": 16, "2": 17, "3": 18, "4": 19, "5": 20, "6": 21, "7": 22, "8": 23, "9": 24, "10": 25, "11": 26, "12": 27}, "meta": {"title": "Fundamentals of Hindu Astrology", "author": "S. Kannan", "pub": "Kannan Publications, Madras, 1967"}, "travel12": ["Mo", "Ju"]};
+window.BOOK={"chapters": [], "house": {}, "extra": {}, "raman": {}, "bphs": {}, "pd": {}, "houseCh": {"1": 16, "2": 17, "3": 18, "4": 19, "5": 20, "6": 21, "7": 22, "8": 23, "9": 24, "10": 25, "11": 26, "12": 27}, "meta": {}, "travel12": ["Mo", "Ju"]};
 </script>
 <script>
 "use strict";
@@ -569,7 +568,7 @@ function renderKundli(){if(!C)return;const P=C.P,p=PROFILE,pc=panchang(C,new Dat
  <div style="overflow-x:auto"><table><tr><th>Graha</th><th>Longitude</th><th>House</th><th>Nakshatra</th><th>Navamsa</th><th>Dignity</th></tr>
  <tr><td><b>Lagna</b></td><td>${fmtLon(C.lagna)}</td><td>1</td><td>${NAKS[C.lagNak]}</td><td>${SIGNS[C.lagNav]}</td><td>—</td></tr>`;
  for(const k of PL){const x=P[k],cls=x.dig==='Exalted'?'ex':x.dig==='Debilitated'?'db':x.dig==='Own sign'?'ow':'';
-  h+=`<tr><td><b>${PN[k]}</b> <span class="muted">${PSK[k]}</span>${x.retro&&k!=='Ra'&&k!=='Ke'?' <span class="pill db">R</span>':''}</td><td>${fmtLon(x.lon)}</td><td>${x.house}</td><td>${NAKS[x.nak]} ${x.pada}</td><td>${SIGNS[x.nav]}</td><td><span class="pill ${cls}">${x.dig}</span>${combust(k)?' <span class="pill db" title="Too close to the Sun: loses strength (Kannan Ch. V)">Combust</span>':''}</td></tr>`}
+  h+=`<tr><td><b>${PN[k]}</b> <span class="muted">${PSK[k]}</span>${x.retro&&k!=='Ra'&&k!=='Ke'?' <span class="pill db">R</span>':''}</td><td>${fmtLon(x.lon)}</td><td>${x.house}</td><td>${NAKS[x.nak]} ${x.pada}</td><td>${SIGNS[x.nav]}</td><td><span class="pill ${cls}">${x.dig}</span>${combust(k)?' <span class="pill db" title="Too close to the Sun: loses strength (Jyotish classics)">Combust</span>':''}</td></tr>`}
  h+=`</table></div><h3>House lords</h3><div style="overflow-x:auto"><table><tr><th>House</th><th>Sign</th><th>Lord</th><th>Lord placed in</th><th>Occupants</th><th>Aspected by</th></tr>`;
  for(let i=1;i<=12;i++){const l=houseLord(C,i);h+=`<tr><td>${i} · ${HOUSE_NAMES[i]}</td><td>${SIGNS[houseSign(C,i)]}</td><td>${PN[l]}</td><td>${P[l].house} (${SIGNS[P[l].sign]})</td><td>${occupants(C,i).map(x=>PN[x]).join(', ')||'—'}</td><td>${aspectsOn(C,i).map(x=>PN[x]).join(', ')||'—'}</td></tr>`}
  h+=`</table></div>`+yogaHTML();
@@ -582,7 +581,7 @@ function renderReadings(){if(!C)return;let h=`<h2>Your 12 houses, house by house
  for(let hs=1;hs<=12;hs++){const on=[...general(hs,AREA[hs]),...yogaRules(hs)].filter(r=>r.on);
   h+=`<h3>${ORD[hs]} house · ${HPLAIN[hs]}</h3>`+houseGlance(hs).replace(/<p class="lbl">[^<]*<\/p>/,'')+(on.length?`<ul class="simple">${on.map(r=>`<li>${r.eff>0?'✅':r.eff<0?'⚠️':'ℹ️'} ${r.then[0].toUpperCase()+r.then.slice(1)} <span class="why">(because ${r.if} — ${esc(r.src)})</span></li>`).join('')}</ul>`:'<p class="muted small">No special book rule is triggered for this house.</p>')}
  $('readBox').innerHTML=h}
-function strengthNote(p){const x=C.P[p];const n=[x.dig];if(combust(p))n.push('Combust (too close to the Sun): weakened, per Kannan Ch. IV');const asp=aspectsOn(C,x.house).filter(q=>q!==p);if(asp.length)n.push('Aspected by '+asp.map(q=>PN[q]).join(', '));return n.join(' · ')}
+function strengthNote(p){const x=C.P[p];const n=[x.dig];if(combust(p))n.push('Combust (too close to the Sun): weakened, per the classical rules');const asp=aspectsOn(C,x.house).filter(q=>q!==p);if(asp.length)n.push('Aspected by '+asp.map(q=>PN[q]).join(', '));return n.join(' · ')}
 function searchQuotes(q,k){return''}
 
 /* ================= RENDER: DASHA ================= */
@@ -721,9 +720,9 @@ function marriageAnswer(){const P=C.P,now=jdNow(),age=Math.floor(ageAt(now)),fem
  if(bad.length)html+=`<p class="lbl">What slows it</p><ul>${bad.map(x=>`<li>${x}</li>`).join('')}</ul>`;
  if(st!=='married')html+=`<p class="lbl">One marriage or two?</p><p>${twoOn?`The book's warning sign for a second marriage shows up (${two[0]}). Read it as "be careful in choosing and protect the relationship", not as fate.`:two.length?`There is one warning sign (${two[0]}), but the book says a good planet's aspect on the marriage house cancels it, and you have one. <b>Expect one marriage.</b>`:`None of the book's signs for a second marriage are in your chart. <b>Expect one marriage.</b>`}</p>`;
  if(st!=='married'&&(satDelay||l7Bad||veWeak))html+=remedy(satDelay?'Sa':veWeak?'Ve':L7);
- if(fem)html+=`<p class="muted small">For women, Vasudev also reads Mars (and some read Jupiter) as the planet for the husband, and the 8th house for married life (Ch. 7).</p>`;
+ if(fem)html+=`<p class="muted small">For women, some texts also read Mars (and some read Jupiter) as the planet for the husband, and the 8th house for married life (Ch. 7).</p>`;
  if(M.length)html+=`<p class="muted small">How the dates are picked: a period of a planet linked to your marriage house (book rule i–iii) <i>and</i> Jupiter in the 2nd, 5th, 7th, 9th or 11th sign from your Moon at the same time (rule iv).</p>`;
- html+=bookBox(book.filter(Boolean).map(t=>quote(t,'Kannan · Ch. XXIII, Seventh House')).join(''))+'</div>';
+ html+=bookBox(book.filter(Boolean).map(t=>quote(t,'Jyotish classics')).join(''))+'</div>';
  const speak=head.replace(/<[^>]+>/g,'').replace(/\(age (\d+)[^)]*\)/g,'at age $1');
  return{html,speak}}
 
@@ -740,7 +739,7 @@ function topicAnswer(t){const e=evalHouse(t.h,t.kar),now=jdNow(),age=Math.floor(
  if(e.good.length)html+=`<p class="lbl">What helps</p><ul>${e.good.map(x=>`<li>${x}</li>`).join('')}</ul>`;
  if(e.bad.length)html+=`<p class="lbl">What slows it</p><ul>${e.bad.map(x=>`<li>${x}</li>`).join('')}</ul>`;
  if(e.s<1){const weak=[e.l,...t.kar].find(p=>['Debilitated',"Enemy's sign"].includes(C.P[p].dig))||e.l;html+=remedy(weak)}
- let qs=e.occ.map(p=>{const bt=bookHouse(t.h,p);return bt?quote(bt,`Kannan on ${PN[p]} in the ${ORD[t.h].toLowerCase()} house`):''}).join('');
+ let qs=e.occ.map(p=>{const bt=bookHouse(t.h,p);return bt?quote(bt,`Classics on ${PN[p]} in the ${ORD[t.h].toLowerCase()} house`):''}).join('');
  if(t._k){const k=t._k;qs+=`<blockquote>The rule: take the strongest of Lagna, Moon and Sun (for you: ${k.ref.n}). Look at the 10th sign from it; its ruler is ${PN[k.L]}. ${PN[k.L]} sits in a Navamsa ruled by <b>${PN[k.nl]}</b>, and that planet shows the kind of work that brings your livelihood. Planets in that 10th sign show where money comes from.<cite>— ${VM_CITE}. The modern job list is MyJyotish's reading of the classical one.</cite></blockquote>`}
  html+=bookBox(qs)+'</div>';
  return{html,speak:head.replace(/<[^>]+>/g,'').replace(/\(age (\d+)[^)]*\)/g,'at age $1')}}
@@ -764,11 +763,11 @@ const digTxt=p=>combust(p)?'combust (too close to the Sun, which takes away its 
 const weakP=p=>C.P[p].dig==='Debilitated'||combust(p);
 const relH=(a,b)=>(Hs(b)-Hs(a)+12)%12+1;
 const ordL=h=>ORD[h].toLowerCase();
-const K=c=>'Kannan, Ch. '+c,RM=h=>`Raman, How to Judge a Horoscope, ${ORD[h]} House`;
+const K=c=>'Jyotish classics',RM=h=>`Jyotish classics, ${ORD[h]} house`;
 function RU(src,iff,on,then,eff=0,extra){return{src,if:iff,on:!!on,then,eff,...(extra||{})}}
 function short(t,n=2){t=plainify(t).replace(/\bHe\b/g,'You').replace(/\bhe\b/g,'you').replace(/\bHis\b/g,'Your').replace(/\bhis\b/g,'your').replace(/\bhim(self)?\b/g,(m,x)=>x?'yourself':'you').replace(/\b(Y|y)ou is\b/g,'$1ou are').replace(/\b(Y|y)ou has\b/g,'$1ou have').replace(/\b(Y|y)ou was\b/g,'$1ou were');const s=t.match(/[^.!?]+[.!?]+/g)||[t];return s.slice(0,n).join(' ').trim()}
 
-/* Kannan Ch. XVI — the general principles, applied to any house */
+/* Jyotish classics — the general principles, applied to any house */
 function general(h,area){area=area||`your ${HPLAIN[h]}`;const l=L(h),occ=occupants(C,h),kt=p=>lordsOf(p).some(x=>[1,4,5,7,9,10].includes(x)),dl=p=>lordsOf(p).some(x=>DUS.includes(x));
  const goodOcc=occ.filter(p=>isBen(p)||kt(p)),badOcc=occ.filter(p=>!goodOcc.includes(p)&&(isMal(p)||dl(p)));
  const l1=L(1),lInDus=DUS.includes(Hs(l))&&!DUS.includes(h),soft=lInDus&&benTouch(l);
@@ -840,7 +839,7 @@ function rulesForeign(){const o12=occupants(C,12);const tr=o12.filter(p=>(B.trav
  return[
   RU(K('XVII'),'your Lagna is a movable sign (Aries, Cancer, Libra, Capricorn)',[0,3,6,9].includes(C.lagSign),'you earn your living in distant places.',2),
   RU(K('XXVIII'),'a planet sits in your 12th that the book links with constant travel',tr.length,`you travel a lot${tr.length?` (${tr.map(p=>PN[p]).join(', ')} in the 12th)`:''}.`,1.5),
-  RU(K('XVIII')+' / Raman',`the ruler of the 2nd sits in the 7th with the ruler of the 7th, both strong`,Hs(L(2))===7&&C.P[L(2)].sign===C.P[L(7)].sign&&!weakP(L(2)),'money comes from foreign sources, with business trips abroad.',2),
+  RU(K('XVIII'),`the ruler of the 2nd sits in the 7th with the ruler of the 7th, both strong`,Hs(L(2))===7&&C.P[L(2)].sign===C.P[L(7)].sign&&!weakP(L(2)),'money comes from foreign sources, with business trips abroad.',2),
   RU(K('XXVIII'),`the ruler of your 12th (${PN[L(12)]}) sits in a difficult house`,DUS.includes(Hs(L(12))),'expenses abroad can be heavy.',-0.5)]}
 function rulesHealth(){const o6=occupants(C,6),triB=o6.filter(p=>isBen(p)&&lordsOf(p).some(h=>[5,9].includes(h))),l1=L(1),P=C.P;
  return[
@@ -851,7 +850,7 @@ function rulesHealth(){const o6=occupants(C,6),triB=o6.filter(p=>isBen(p)&&lords
   ramanLord(6),ramanLord(1)].filter(Boolean)}
 function rulesGeneric(h){return[...general(h),ramanLord(h)].filter(Boolean)}
 
-/* ---------- marriage rules (Kannan Ch. XXIII), all made explicit ---------- */
+/* ---------- marriage rules (Jyotish classics), all made explicit ---------- */
 function rulesMarriage(age,fem){const P=C.P,l7=L(7),occ=occupants(C,7),asp7=aspectsOn(C,7);
  const benOn7=[...occ,...asp7].some(isBen),malOn7=[...occ,...asp7].some(p=>isMal(p)),veStr=['Exalted','Own sign',"Friend's sign"].includes(P.Ve.dig)&&!combust('Ve')&&benTouch('Ve'),veWeak=weakP('Ve')||with_('Ve').some(p=>['Sa','Ma','Ra','Ke'].includes(p));
  const satD=asp7.includes('Sa')||occ.includes('Sa')||touches(l7).includes('Sa');
@@ -915,7 +914,7 @@ function answerFromRules(label,h,rules,opts={}){if(h>=1&&h<=12){const have=new S
  if(off.length)html+=`<details class="bookbox"><summary>🔍 ${off.length} other rules checked (not in your chart)</summary>${off.map(r=>`<div class="rule off"><span class="if">IF</span> ${r.if} <span class="then">THEN</span> ${r.then} <cite>${esc(r.src)}</cite></div>`).join('')}</details>`;
  const ex=[...raw,...(opts.extra||[])];
  if(ex.length)html+=`<details class="bookbox"><summary>📜 The books' own words about your placements (old-style language)</summary>${ex.map(r=>`<div class="rule info"><b>${cap(r.if)}:</b> ${esc(r.then)}<cite>${esc(r.src)}</cite></div>`).join('')}</details>`;
- html+=`<p class="muted small" style="margin-top:10px">⚖️ Built only from the rules of your books (Kannan, Parashara, Phaladeepika, Raman, Varahamihira, Vasudev). It depends on an exact birth time and place. This is guidance, not certainty. For health, legal or money decisions, also consult a qualified professional.</p></div>`;
+ html+=`<p class="muted small" style="margin-top:10px">⚖️ Built only from the rules of your books (Parashara, Phaladeepika, Varahamihira, Prasna Marga and other classical texts). It depends on an exact birth time and place. This is guidance, not certainty. For health, legal or money decisions, also consult a qualified professional.</p></div>`;
  const sp=(opts.head?opts.head+' ':'')+[...pos.slice(0,2),...neg.slice(0,1)].map(r=>r.then).join(' ')+(M.length?` Best time: ${mY(M[0].start)} to ${mY(M[0].end)}.`:'');
  return{html,speak:`${label.split(' —')[0]}: ${tag}. `+sp.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ')}}
 
@@ -940,9 +939,9 @@ function marriageRuleAnswer(focus){const now=jdNow(),age=Math.floor(ageAt(now)),
  let mid=st==='married'?(two.length?`<p class="lbl">Second marriage</p><p>${twoTxt}${oneTxt}</p>`:''):`<p class="lbl">Will you marry once or more than once?</p><p class="big">${verdict2}</p><details class="bookbox"><summary>Why: the book's signs checked</summary><p>${twoTxt}${oneTxt}${cancTxt}</p></details>`;
  if(focus==='two'&&st!=='married'){head='<b>Second marriage?</b> '+verdict2;}
  return answerFromRules('Marriage — 7th house',7,rules,{tag:[tag,cls],head,windows:st==='married'?[]:M,noTiming:st==='married',mid,remedyFor:delay?'Sa':l7,
-  timingNote:'How the dates are picked (Kannan Ch. XXIII rules i–iv): a period of a planet linked to your 7th house from the Lagna, Moon or Venus, at the same time as Jupiter in the 2nd, 5th, 7th, 9th or 11th sign from your Moon.'})}
+  timingNote:'How the dates are picked (Jyotish classics rules i–iv): a period of a planet linked to your 7th house from the Lagna, Moon or Venus, at the same time as Jupiter in the 2nd, 5th, 7th, 9th or 11th sign from your Moon.'})}
 
-function topicRuleAnswer(t,ql){const h=t.h;let rules,label=t.label+' — '+ordL(h)+' house',opts={timingNote:'How the dates are picked: a period (dasha or bhukti) of a well-placed planet that rules or sits in this house (Kannan Ch. XXX), at the same time as Jupiter in a good sign from your Moon: the 2nd, 5th, 7th, 9th, 10th or 11th (Kannan Ch. XXXI; for children the 5th, 7th or 9th, Ch. XXI).'};
+function topicRuleAnswer(t,ql){const h=t.h;let rules,label=t.label+' — '+ordL(h)+' house',opts={timingNote:'How the dates are picked: a period (dasha or bhukti) of a well-placed planet that rules or sits in this house (Jyotish classics), at the same time as Jupiter in a good sign from your Moon: the 2nd, 5th, 7th, 9th, 10th or 11th (Jyotish classics; for children the 5th, 7th or 9th, Ch. XXI).'};
  if(h===2||h===11){rules=rulesWealth();label='Money & wealth — 2nd and 11th houses';opts.remedyFor=L(2)}
  else if(h===10){const biz=/business|startup|own|venture|partner/.test(ql);rules=rulesCareer(biz);if(biz)label='Career & own business — 10th and 7th houses';opts.remedyFor=L(10)}
  else if(h===5){rules=rulesChildren();opts.remedyFor='Ju';if((PROFILE.status||'single')==='single')opts.mid='<p class="muted small">You are single, so read this as "after marriage".</p>'}
@@ -979,9 +978,9 @@ function bhuktiRule(m,a){if(m===a)return null;const ok=(x,y)=>{const hx=x==='As'
 function dashaRuleAnswer(){const now=jdNow(),m=DAS.list.find(x=>x.start<=now&&x.end>now),a=m.sub.find(x=>x.start<=now&&x.end>now);
  const rules=[...dashaRules(m.lord,'main period (Mahadasha) planet'),...dashaRules(a.lord,'sub-period (Bhukti) planet'),bhuktiRule(m.lord,a.lord)].filter(Boolean);
  const head=`You are in the <b>${PN[m.lord]} main period</b> (until ${mY(m.end)}), sub-period of <b>${PN[a.lord]}</b> (until ${mY(a.end)}).`;
- return answerFromRules('Your current period (Dasha)',0,rules,{head,noTiming:true,mid:'<p class="muted small">A "dasha" is a planetary period. The planet in charge brings forward the houses it rules, well or badly depending on where it sits (Kannan Ch. XXX).</p>'})}
-/* ================= YOGAS — B.V. Raman, "Three Hundred Important Combinations" ================= */
-const YB='Raman, 300 Combinations';
+ return answerFromRules('Your current period (Dasha)',0,rules,{head,noTiming:true,mid:'<p class="muted small">A "dasha" is a planetary period. The planet in charge brings forward the houses it rules, well or badly depending on where it sits (Jyotish classics).</p>'})}
+/* ================= YOGAS ================= */
+const YB='Jyotish classics (yogas)';
 function yogaList(){const P=C.P,K=[1,4,7,10],TR=[1,5,9],DS=[6,8,12],UP=[3,6,10,11];
  const H=p=>P[p].house,S=p=>P[p].sign,Lh=h=>houseLord(C,h),from=(a,b)=>(S(b)-S(a)+12)%12+1;
  const seven=['Su','Mo','Ma','Me','Ju','Ve','Sa'],ben=['Ju','Ve','Me'].filter(p=>isBen(p)),benAll=['Ju','Ve','Me','Mo'].filter(p=>isBen(p)),mal=['Su','Ma','Sa','Ra','Ke'];
@@ -999,7 +998,7 @@ function yogaList(){const P=C.P,K=[1,4,7,10],TR=[1,5,9],DS=[6,8,12],UP=[3,6,10,1
  y(3,'Anapha',fromMoon(12).length>0,'good reputation, polite and generous, fond of good things; in later life, renunciation',1,`${fromMoon(12).map(p=>PN[p]).join(', ')} in the 12th from the Moon`,'self');
  y(4,'Dhurdhura',fromMoon(2).length&&fromMoon(12).length,'bountiful, blessed with wealth and vehicles',1,'planets on both sides of the Moon','money');
  const kemCancel=PL.some(p=>!['Su','Mo','Ra','Ke'].includes(p)&&(K.includes(H(p))||K.includes(from('Mo',p))))||PL.some(p=>p!=='Mo'&&!['Ra','Ke'].includes(p)&&S(p)===S('Mo'));
- y(5,'Kemadruma',!fromMoon(2).length&&!fromMoon(12).length&&!kemCancel,'struggles and sorrow',0,'no planet on either side of the Moon, and none of the cancellations Raman quotes applies (no planet in a kendra from Lagna or the Moon, none joining the Moon)','self');
+ y(5,'Kemadruma',!fromMoon(2).length&&!fromMoon(12).length&&!kemCancel,'struggles and sorrow',0,'no planet on either side of the Moon, and none of the cancellations the classics quote applies (no planet in a kendra from Lagna or the Moon, none joining the Moon)','self');
  y(7,'Adhi',['Ju','Ve','Me'].every(p=>[6,7,8].includes(from('Mo',p))),'polite, trustworthy, a leader with comforts and a long life',1,'Jupiter, Venus and Mercury in the 6th, 7th and 8th from the Moon','career');
  y(8,'Chatussagara',K.every(h=>housesOcc.includes(h)),'a good reputation, equal to a ruler, long and prosperous life',1,'all four kendras are occupied','fame');
  y(9,'Vasumathi',ben.length&&(ben.every(p=>UP.includes(H(p)))||ben.every(p=>UP.includes(from('Mo',p)))),'always wealthy and independent',1,'the good planets sit in the upachaya houses (3, 6, 10, 11)','money');
@@ -1073,10 +1072,10 @@ const YTOPIC={2:['money'],11:['money'],10:['career','fame'],7:['family'],5:['chi
 function yogaRules(h){if(!C)return[];const tp=YTOPIC[h]||[];return yogaList().filter(y=>tp.includes(y.topic)).map(y=>RU(`${YB}${Number.isInteger(y.n)?' #'+y.n:''}`,`${y.name} Yoga is in your chart: ${y.why}`,true,y.res+'.',y.good?1:-1))}
 function yogaHTML(){const Y=yogaList(),g=Y.filter(y=>y.good),b=Y.filter(y=>!y.good);
  const li=y=>`<div class="yoga"><b>${y.name}</b><span>${y.res[0].toUpperCase()+y.res.slice(1)}. <span class="why">Formed because ${y.why}. (${YB}${Number.isInteger(y.n)?', #'+y.n:''})</span></span></div>`;
- return `<h3>Yogas in your chart (${Y.length})</h3><p class="muted small">Checked against B.V. Raman's <i>Three Hundred Important Combinations</i>. About 75 of the 300 can be checked exactly from a birth chart and are tested here. Yogas the book links to death, poisoning, specific diseases, crime or adultery are deliberately not shown: they can cause fear and harm. Raman himself says results depend on the strength of the planets involved.</p>
+ return `<h3>Yogas in your chart (${Y.length})</h3><p class="muted small">Checked against the classical yoga combinations. About 75 of the 300 can be checked exactly from a birth chart and are tested here. Yogas the book links to death, poisoning, specific diseases, crime or adultery are deliberately not shown: they can cause fear and harm. The classics themselves say results depend on the strength of the planets involved.</p>
  ${g.length?`<p class="lbl">Supportive yogas</p>${g.map(li).join('')}`:''}${b.length?`<p class="lbl">Challenging yogas</p>${b.map(li).join('')}`:''}${!Y.length?'<p class="muted">None of the tested yogas is formed.</p>':''}`}
 
-/* ================= PRASHNA (Kannan Ch. XXXIII + Prasna Marga Part I) ================= */
+/* ================= PRASHNA (Jyotish classics + Prasna Marga Part I) ================= */
 function sunAlt(jd,lat,lon){const T=(jd-2451545)/36525,eps=23.4393-3.563e-7*(jd-2451543.5),lam=tropical(jd).Su;
  const dec=Math.asin(sind(eps)*sind(lam))/R,ra=n360(atan2d(cosd(eps)*sind(lam),cosd(lam)));const gmst=n360(280.46061837+360.98564736629*(jd-2451545)+0.000387933*T*T);const H=n360(gmst+lon-ra);
  return Math.asin(sind(lat)*sind(dec)+cosd(lat)*cosd(dec)*cosd(H))/R}
@@ -1091,7 +1090,7 @@ function horaAt(date,lat,lon){const jd=date.getTime()/86400000+2440587.5;let rs=
  return{dl,hl,ml,wd,mu:Math.min(15,Math.max(1,mu)),day}}
 const HORA_FAV={Ve:'marriage, love, sports and recreation, vehicles and pleasures',Me:'childbirth, friends and relatives arriving, studies and writing, short journeys and short-term loans',Mo:'health, short journeys, home matters and trade in liquids',Ju:'money gains, birth of a child, meeting a superior or teacher, and charitable work',Sa:'impediments and delays',Ma:'trouble from enemies, quarrels and misunderstandings',Su:'some danger'};
 const DAY_MU=['Rudra','Ahi','Mitra','Pitru','Vasu','Vara','Vishwedeva','Vidhi','Satamukhi','Puruhuta','Vahni','Naktanchara','Varuna','Aryama','Bhaga'],NIGHT_MU=['Girisa','Ajapada','Ahirbudhnya','Pusha','Aswi','Yama','Agni','Vidhatru','Chanda','Aditi','Jeeva','Vishnu','Yumigadyuti','Thvashtru','Samudra'];
-function prashnaRules(T,h,hr,arooda){const P=T.P,rules=[],KX=c=>'Kannan, Ch. XXXIII'+(c?' · '+c:''),PMs=s=>'Prasna Marga, Part I, St. '+s;
+function prashnaRules(T,h,hr,arooda){const P=T.P,rules=[],KX=c=>'Jyotish classics'+(c?' · '+c:''),PMs=s=>'Prasna Marga, Part I, St. '+s;
  const lagRules=(lagSign,label)=>{const l=LORD[lagSign],lh=(P[l].sign-lagSign+12)%12+1,hOf=p=>(P[p].sign-lagSign+12)%12+1;
   rules.push(RU(KX(),`the ruler of the ${label} (${PN[l]}) sits in a difficult house (6, 8 or 12) counted from it`,[6,8,12].includes(lh),'the result is unsatisfactory.',-1.5));
   rules.push(RU(KX(),`the ruler of the ${label} (${PN[l]}) sits in a kendra or trikona from it`,[1,4,5,7,9,10].includes(lh),'there will be success.',1.5));
@@ -1124,10 +1123,10 @@ function prashnaHTML(question,h,num){const now=new Date(),lat=HERE?.lat??PROFILE
  return `<div class="ans"><p class="lbl">Prashna — answer from this moment</p>${question?`<p class="muted small">Question: “${esc(question)}” · asked ${now.toLocaleString('en-IN',{dateStyle:'medium',timeStyle:'short'})}</p>`:''}<span class="score ${v[1]}">${v[0]}</span> <span class="muted small">${pos.length} book rules for · ${neg.length} against</span>
  <p class="lbl">In simple words</p><ul class="simple">${pos.map(r=>`<li>✅ ${cap(r.then)}${why(r)}</li>`).join('')}${neg.map(r=>`<li>⚠️ ${cap(r.then)}${why(r)}</li>`).join('')}${on.filter(r=>!r.eff).map(r=>`<li>ℹ️ ${cap(r.then)}${why(r)}</li>`).join('')}</ul>
  <p class="muted small">Moment details: rising sign ${SIGNS[T.lagSign]}, Moon in ${SIGNS[T.P.Mo.sign]} (${NAKS[T.P.Mo.nak]}), day of ${PN[hr.dl]}, hour of ${PN[hr.hl]}, moment of ${PN[hr.ml]}${ar!=null?`, Arooda Lagna ${SIGNS[ar]} from number ${num}`:''}.</p>
- <p class="muted small">Prashna answers one sincere question from the moment it is asked, so ask each question once. As the book (Kannan) says, a good deal of caution is needed in giving out these results. Health and legal questions also need a professional.</p></div>`}
+ <p class="muted small">Prashna answers one sincere question from the moment it is asked, so ask each question once. As the classics say, a good deal of caution is needed in giving out these results. Health and legal questions also need a professional.</p></div>`}
 
-/* ================= MUHURTA (Raman, "Muhurtha – Electional Astrology") ================= */
-const MS='Raman, Muhurtha';
+/* ================= MUHURTA ================= */
+const MS='Muhurta classics';
 const NK=n=>NAKS[n];
 const ACTS={
  vehicle:{label:'Buy a car, bike or vehicle',stars:[21,22,23,6,14],starSrc:'Ch. IV: movable stars are auspicious for acquiring vehicles'},
@@ -1154,7 +1153,7 @@ function tyajya(T){const s=T.lagSign,d=T.lagna%30;if([0,1,8,5].includes(s)&&d<3)
 function hTo(T,p){return(T.P[p].sign-T.lagSign+12)%12+1}
 function evalMoment(key,T,wd){const A=ACTS[key],ok=[],bad=[],warn=[];const t=tithiNo(T),tp=tithiInPaksha(t),nak=T.P.Mo.nak,tara=taraOf(nak),cb=(T.P.Mo.sign-C.P.Mo.sign+12)%12+1,pc=panchakaOf(T,wd),fem=PROFILE&&PROFILE.gender==='female';
  const DN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
- const add=(arr,txt,src)=>arr.push({txt,src:MS+', '+src});
+ const add=(arr,txt,src)=>arr.push({txt,src:MS});
  if(A.special==='surgery'){
   if(n360(T.P.Mo.lon-T.P.Su.lon)<180)add(ok,'The Moon is waxing, which the book prefers for operations.','Ch. XV');else add(warn,'The Moon is waning. The book prefers a waxing Moon for operations.','Ch. XV');
   if(Math.abs(n360(T.P.Mo.lon-T.P.Su.lon)-180)<6)add(bad,'It is the Full Moon. The book says never operate at the exact Full Moon.','Ch. XV');
@@ -1162,17 +1161,17 @@ function evalMoment(key,T,wd){const A=ACTS[key],ok=[],bad=[],warn=[];const t=tit
   if([2,6].includes(wd))add(ok,`${DN[wd]} is recommended for surgery.`,'Ch. XV');
   if(['Exalted','Own sign'].includes(T.P.Ma.dig))add(ok,'Mars is strong, as the book requires.','Ch. XV');else add(warn,'Mars is not strong. The book wants Mars powerful for surgery.','Ch. XV');
   if(PL.some(p=>hTo(T,p)===8&&!['Ra','Ke'].includes(p)))add(bad,'The 8th house of the moment is occupied. The book wants it empty.','Ch. XV');
-  if([3,7].includes(tara.r)||(tara.r===5&&tara.cyc===1))add(bad,`Tarabala: the day's star is ${tara.name} from your birth star. Raman advises avoiding it for important work.`,'Ch. III');else if(tara.r!==1)add(ok,`Tarabala is good (${tara.name}).`,'Ch. III');
+  if([3,7].includes(tara.r)||(tara.r===5&&tara.cyc===1))add(bad,`Tarabala: the day's star is ${tara.name} from your birth star. The Muhurta texts advise avoiding it for important work.`,'Ch. III');else if(tara.r!==1)add(ok,`Tarabala is good (${tara.name}).`,'Ch. III');
   if([6,8,12].includes(cb))add(bad,`Chandrabala is missing: the Moon is in the ${ordinalT(cb)} sign from your Moon sign.`,'Ch. III');
   if(tara.r===1)add(bad,'It is your own birth star, which the book says is inauspicious for medical treatment.','Ch. III');
   if([5,17,8,18].includes(nak)&&RIKTA.includes(t))add(ok,`${NK(nak)} star on a 4th/9th/14th lunar day is the book's ideal for surgery.`,'Ch. XV');
   return{ok,bad,warn,tara,pc,t,nak}}
  if(A.special==='delivery'){
   const l1=LORD[T.lagSign];const L1=T.P[l1];
-  if([6,8,12].includes((L1.sign-T.lagSign+12)%12+1)||L1.dig==='Debilitated')add(bad,`The ruler of the baby's Lagna (${PN[l1]}) would be in a difficult house or debilitated. Kannan says life is not smooth unless the Lagna is powerful.`,'');else add(ok,`The ruler of the baby's Lagna (${PN[l1]}) would be well placed, which Kannan treats as the base of a smooth life.`,'');
+  if([6,8,12].includes((L1.sign-T.lagSign+12)%12+1)||L1.dig==='Debilitated')add(bad,`The ruler of the baby's Lagna (${PN[l1]}) would be in a difficult house or debilitated. the classics say life is not smooth unless the Lagna is powerful.`,'');else add(ok,`The ruler of the baby's Lagna (${PN[l1]}) would be well placed, which the classics treat as the base of a smooth life.`,'');
   if(PL.some(p=>hTo(T,p)===1&&['Ju','Ve','Me'].includes(p)))add(ok,'A good planet would sit in the baby\'s Lagna.','');
-  if(n360(T.P.Mo.lon-T.P.Su.lon)>=180)add(warn,'The Moon would be waning, which Kannan counts as weaker.','');else add(ok,'The Moon would be waxing (a good Moon in Kannan\'s rules).','');
-  ok.forEach(x=>x.src='Kannan, Ch. XVI–XVII');bad.forEach(x=>x.src='Kannan, Ch. XVI');warn.forEach(x=>x.src='Kannan, Ch. III');
+  if(n360(T.P.Mo.lon-T.P.Su.lon)>=180)add(warn,'The Moon would be waning, which the classics count as weaker.','');else add(ok,'The Moon would be waxing (a good Moon in the classical rules).','');
+  ok.forEach(x=>x.src='Jyotish classics');bad.forEach(x=>x.src='Jyotish classics');warn.forEach(x=>x.src='Jyotish classics');
   return{ok,bad,warn,tara,pc,t,nak}}
  // general rules (Ch. II–IV)
  if(nak===1)add(bad,'Bharani star. The book says it must be avoided for all good work.','Ch. III');
@@ -1191,7 +1190,7 @@ function evalMoment(key,T,wd){const A=ACTS[key],ok=[],bad=[],warn=[];const t=tit
  // personal: tarabala & chandrabala (Ch. III)
  const janmaFav=A.janmaOK,janmaBad=A.noJanma||(A.noJanmaMale&&!fem);
  if(tara.r===1){if(janmaFav)add(ok,'It is your own birth star, which the book says is favourable for this.','Ch. III');else if(janmaBad)add(bad,'It is your own birth star, which the book says is inauspicious for this.','Ch. III');else add(warn,'It is your own birth star, ordinarily held unfavourable.','Ch. III')}
- else if([3,7].includes(tara.r))add(bad,`Tarabala: the day's star is ${tara.name} (${tara.r===3?'dangers, losses':'dangers'}) from your birth star. Raman advises avoiding it for important work.`,'Ch. III');
+ else if([3,7].includes(tara.r))add(bad,`Tarabala: the day's star is ${tara.name} (${tara.r===3?'dangers, losses':'dangers'}) from your birth star. The Muhurta texts advise avoiding it for important work.`,'Ch. III');
  else if(tara.r===5){if(tara.cyc===1)add(bad,'Tarabala: the day\'s star is Pratyak (obstacles) from your birth star.','Ch. III');else add(warn,'Tarabala: Pratyak (obstacles), weakened because it is in a later cycle.','Ch. III')}
  else add(ok,`Tarabala is good: the day's star is ${tara.name} from your birth star.`,'Ch. III');
  if([6,8,12].includes(cb))add(bad,`Chandrabala is missing: the Moon is in the ${ordinalT(cb)} sign from your Moon sign.`,'Ch. III');else add(ok,'Chandrabala is good: the Moon is well placed from your Moon sign.','Ch. III');
@@ -1231,9 +1230,9 @@ function muhurtaHTML(key,start,days,lat,lon,single){const res=muhurtaSearch(key,
   return h+muhurtaFoot(key)+'</div>'}
  const good=res.filter(x=>!x.e.bad.length).sort((a,b)=>b.e.ok.length-a.e.ok.length||a.day-b.day).slice(0,6).sort((a,b)=>a.day-b.day);
  return `<div class="ans"><p class="lbl">${A.label} — best dates in the next ${days} days</p>${good.length?good.map(x=>slotCard(x,false)).join(''):'<p class="big">No date in this range passes all the book\'s rules for you. Try a longer range.</p>'}${muhurtaFoot(key)}</div>`}
-function muhurtaFoot(key){return `<p class="muted small" style="margin-top:8px">Checked with the book's rules for this activity plus your personal factors: your birth star (Tarabala), your Moon sign (Chandrabala) and Panchaka (Raman, Muhurtha Ch. II–IV and the chapter for this activity). Times are for the place set in Good Dates.${key==='delivery'?' <b>A delivery time is a medical decision. Only use this to compare times your doctor has already said are safe.</b> Your books give no rules for choosing a birth time, so this only checks the baby\'s chart by Kannan\'s rules for a strong Lagna and Moon.':''}${['treatment','surgery'].includes(key)?' <b>Never delay urgent medical care for a muhurta.</b>':''}</p>`}
+function muhurtaFoot(key){return `<p class="muted small" style="margin-top:8px">Checked with the book's rules for this activity plus your personal factors: your birth star (Tarabala), your Moon sign (Chandrabala) and Panchaka (the Muhurta classics and the chapter for this activity). Times are for the place set in Good Dates.${key==='delivery'?' <b>A delivery time is a medical decision. Only use this to compare times your doctor has already said are safe.</b> Your books give no rules for choosing a birth time, so this only checks the baby\'s chart by the classical rules for a strong Lagna and Moon.':''}${['treatment','surgery'].includes(key)?' <b>Never delay urgent medical care for a muhurta.</b>':''}</p>`}
 
-/* ================= KUNDLI MATCHING (Raman, Muhurtha Ch. XI) ================= */
+/* ================= KUNDLI MATCHING (the Muhurta classics) ================= */
 const GANA=n=>[0,6,7,14,12,21,26,16,4].includes(n)?'Deva':[3,10,19,24,1,5,11,20,25].includes(n)?'Manusha':'Rakshasa';
 const YONI={0:['Horse','M'],23:['Horse','F'],1:['Elephant','M'],26:['Elephant','F'],7:['Sheep','M'],2:['Sheep','F'],3:['Serpent','M'],4:['Serpent','F'],18:['Dog','M'],5:['Dog','F'],8:['Cat','M'],6:['Cat','F'],9:['Rat','M'],10:['Rat','F'],11:['Cow','M'],25:['Cow','F'],14:['Buffalo','M'],12:['Buffalo','F'],15:['Tiger','M'],13:['Tiger','F'],17:['Hare','M'],16:['Hare','F'],19:['Monkey','M'],21:['Monkey','F'],24:['Lion','M'],22:['Lion','F'],20:['Mongoose','M']};
 const YO=['Horse','Elephant','Sheep','Serpent','Dog','Cat','Rat','Cow','Buffalo','Tiger','Hare','Monkey','Mongoose','Lion'];
@@ -1252,15 +1251,15 @@ function matchKundli(B_,G_){const b=B_.P.Mo,g=G_.P.Mo,cnt=(b.nak-g.nak+27)%27+1,
  const gb=GANA(b.nak),gg=GANA(g.nak);let gp,gw;
  if(gb===gg){gp=6;gw=`Both ${gb}: agreement.`}else if(gb==='Rakshasa'){gp=3;gw=`Boy Rakshasa, girl ${gg}: the book says "passable".`}
  else if(gg==='Rakshasa'){if(cntG>14){gp=3;gw=`Girl Rakshasa, but her star is beyond the 14th from the boy's, so the book says the evil may be ignored.`}else{gp=0;gw=`Girl Rakshasa, boy ${gb}: the book says this should be avoided unless other factors neutralise it.`}}
- else{gp=5;gw=`Deva and Manusha. Raman does not rule on this mix, and standard practice gives 5 of 6.`}
+ else{gp=5;gw=`Deva and Manusha. The classical texts do not rule on this mix, and standard practice gives 5 of 6.`}
  add('Gana',6,gp,gw);
- const yb=YONI[b.nak],yg=YONI[g.nak];let yp=YM[YO.indexOf(yg[0])][YO.indexOf(yb[0])];add('Yoni',4,yp,`Boy ${yb[0]} (${yb[1]==='M'?'male':'female'}), girl ${yg[0]} (${yg[1]==='M'?'male':'female'}). Units from Raman's table.`);
+ const yb=YONI[b.nak],yg=YONI[g.nak];let yp=YM[YO.indexOf(yg[0])][YO.indexOf(yb[0])];add('Yoni',4,yp,`Boy ${yb[0]} (${yb[1]==='M'?'male':'female'}), girl ${yg[0]} (${yg[1]==='M'?'male':'female'}). Units from the classical table.`);
  const d=(b.sign-g.sign+12)%12+1,lb=LORD[b.sign],lg=LORD[g.sign],friends=lb===lg||(relOf(lb,lg)==='F'&&relOf(lg,lb)==='F');
  const rasiGood=[1,7,8,9,10,11,12].includes(d);let rp=rasiGood||friends?7:0;
  add('Rasi',7,rp,`Boy's Moon sign is the ${ordinalT(d)} from the girl's. ${rasiGood?'A good position.':friends?'A bad position, but the Moon-sign lords are the same or friends, so the book cancels the evil.':'A bad position, per the book.'}`);
  const r1=relOf(lb,lg),r2=relOf(lg,lb),pair=[r1,r2].sort().join('');let mp={FF:5,FN:4,NN:3,EF:1,EN:0.5,EE:0}[pair];let mw=`Moon-sign lords ${PN[lb]} and ${PN[lg]}: ${{F:'friend',N:'neutral',E:'enemy'}[r1]} / ${{F:'friend',N:'neutral',E:'enemy'}[r2]}.`;
  if(mp<5){const nb=LORD[B_.P.Mo.nav],ng=LORD[G_.P.Mo.nav];if(nb===ng||(relOf(nb,ng)==='F'&&relOf(ng,nb)==='F')){mp=5;mw+=' The Navamsa lords of the Moons are friends, so the book counts it as present.'}}
- add('Graha Maitri',5,mp,mw+' (Raman gives the categories; the point values are standard practice.)');
+ add('Graha Maitri',5,mp,mw+' (the classics give the categories; the point values are standard practice.)');
  const vp=(VASYA[b.sign].includes(g.sign)||VASYA[g.sign].includes(b.sign))?2:0;add('Vasya',2,vp,vp?'One Moon sign is amenable to the other.':'Neither Moon sign is amenable to the other.');
  const varp=VARNA(b.sign)>=VARNA(g.sign)?1:0;add('Varna',1,varp,`Boy ${VARNA_N[VARNA(b.sign)]}, girl ${VARNA_N[VARNA(g.sign)]}.`);
  const nb=NADI(b.nak),ng=NADI(g.nak);let np=nb!==ng?8:0,nw=nb!==ng?`Different Nadis (${nb} and ${ng}): good.`:`Same Nadi (${nb}): the book's most important dosha.`;
@@ -1280,8 +1279,8 @@ function matchHTML(nameB,nameG,B_,G_){const m=matchKundli(B_,G_);const blockers=
  <p class="muted small">${esc(nameB)}: Moon in ${SIGNS[m.b.sign]}, star ${NAKS[m.b.nak]} pada ${m.b.pada} · ${esc(nameG)}: Moon in ${SIGNS[m.g.sign]}, star ${NAKS[m.g.nak]} pada ${m.g.pada}</p>
  <div style="overflow-x:auto"><table><tr><th>Koota</th><th>Points</th><th>Why</th></tr>${m.K.map(k=>`<tr><td><b>${k.name}</b></td><td>${k.pts} / ${k.max}</td><td class="small">${k.why}</td></tr>`).join('')}<tr><td><b>Total</b></td><td><b>${m.total} / 36</b></td><td></td></tr></table></div>
  <p class="lbl">Pass / fail checks</p><ul class="simple">${m.chk.map(c=>`<li>${c.ok?'✅':'⛔'} <b>${c.name}</b>: ${c.why}</li>`).join('')}</ul>
- <p class="lbl">Each person's marriage house (checked first, as Raman says)</p><ul class="simple">${[[nameB,B_],[nameG,G_]].map(([n,X])=>{const s=X.P,l7=LORD[(X.lagSign+6)%12],h7=(s[l7].sign-X.lagSign+12)%12+1;return `<li>${esc(n)}: 7th house ruler ${PN[l7]} sits in house ${h7}${[6,8,12].includes(h7)?' (a difficult house: open their own Ask tab for the full marriage reading)':' (not one of the difficult houses 6, 8, 12)'}.</li>`}).join('')}</ul>
- <p class="muted small">Source: Raman, Muhurtha Ch. XI (12 kootas, Rajju, Vedha and their exceptions). Raman says the kootas matter only after each chart's 7th and 8th houses have been judged. He gives no pass mark; most astrologers treat 18 of 36 as the minimum. A score never replaces two people's own judgement of each other.</p></div>`;
+ <p class="lbl">Each person's marriage house (checked first, as the classics say)</p><ul class="simple">${[[nameB,B_],[nameG,G_]].map(([n,X])=>{const s=X.P,l7=LORD[(X.lagSign+6)%12],h7=(s[l7].sign-X.lagSign+12)%12+1;return `<li>${esc(n)}: 7th house ruler ${PN[l7]} sits in house ${h7}${[6,8,12].includes(h7)?' (a difficult house: open their own Ask tab for the full marriage reading)':' (not one of the difficult houses 6, 8, 12)'}.</li>`}).join('')}</ul>
+ <p class="muted small">Source: Muhurta classics (12 kootas, Rajju, Vedha and their exceptions). The classics say the kootas matter only after each chart's 7th and 8th houses have been judged. He gives no pass mark; most astrologers treat 18 of 36 as the minimum. A score never replaces two people's own judgement of each other.</p></div>`;
  return h}
 
 /* ---------- Good Dates + Match UI ---------- */
@@ -1375,7 +1374,7 @@ function karmajiva(){const P=C.P,dv={Exalted:4,'Own sign':3,"Friend's sign":2,'N
  return{ref,L,nl,inside,work:KARMA[nl].work,src:inside.map(p=>KARMA[p].src)}}
 const VM_CITE='Varahamihira, Brihat Jataka ch. 10 (Karmajiva), v. 1–2, as explained in the commentary in your PDF';
 
-/* ---------- Simple remedies (Vasudev, Ch. 8) ---------- */
+/* ---------- Simple remedies (remedy texts) ---------- */
 const DEITY={Su:'Surya (Aditya)',Mo:'Parvati Mata',Ma:'Subrahmanya, Hanuman or Narasimha',Me:'Lord Vishnu',Ju:'Dattatreya',Ve:'Lakshmi Devi',Sa:'Lord Shiva (Shankara)',Ra:'Durga Devi',Ke:'Lord Ganesha'};
 const DAY={Su:'Sunday',Mo:'Monday',Ma:'Tuesday',Me:'Wednesday',Ju:'Thursday',Ve:'Friday',Sa:'Saturday',Ra:'Saturday',Ke:'Tuesday'};
 const GRAIN={Su:'wheat',Mo:'rice',Ma:'dal (lentils)',Me:'green gram (moong)',Ju:'Bengal gram (chana)',Ve:'beans',Sa:'sesame (til)',Ra:'black gram (urad)',Ke:'horse gram (kulthi)'};
@@ -1389,26 +1388,26 @@ function remediesForChart(){if(!C)return'';const P=C.P,now=jdNow(),m=DAS.list.fi
  if(a&&(P[a.lord].dig==='Debilitated'||combust(a.lord)||[6,8,12].includes(P[a.lord].house)))addP(a.lord,`you are in its sub-period, and it is ${weakWhy(a.lord)} in your chart`,[]);
  PL.filter(p=>!['Ra','Ke'].includes(p)&&(P[p].dig==='Debilitated'||combust(p))).forEach(p=>addP(p,`${PN[p]} is ${combust(p)?'combust':'debilitated'} in your chart`,[]));
  if(P.Mo.sign===P.Sa.sign||(P.Ra.house===2&&aspectsOn(C,2).includes('Sa')))addP('Sa','harsh-speech combination (Moon with Saturn, or Rahu in the 2nd under Saturn)',['speech']);
- return `<h3>Remedies for your chart</h3><p class="muted small">For the weak points in your chart and your running periods, from your books (Vasudev Ch. 8 and 11, Kannan Table D and Ch. XXI). Remedies support your own effort; they don't replace it.</p>`+(out.join('')||'<p class="muted">No planet in your chart is weak enough to need a specific remedy.</p>')}
+ return `<h3>Remedies for your chart</h3><p class="muted small">For the weak points in your chart and your running periods, from your books (remedy texts, Jyotish classics and Ch. XXI). Remedies support your own effort; they don't replace it.</p>`+(out.join('')||'<p class="muted">No planet in your chart is weak enough to need a specific remedy.</p>')}
 function remedyPlan(p,why,special){const sp=special||[];
  let h=`<div class="reading"><p class="lbl" style="margin-top:0">Remedies for ${PN[p]}${why?` <span class="why">(${why})</span>`:''}</p><ul class="simple">
- <li>🙏 <b>Prayer:</b> every <b>${DAY[p]}</b>${['Ra','Ke'].includes(p)?' (common practice: Rahu and Ketu have no weekday of their own)':''}, worship <b>${DEITY[p]}</b>. Offer ${FLOWER[p]}. <span class="why">(Vasudev Ch. 8 · Kannan Table D)</span></li>
- <li>📿 <b>Mantra:</b> recite ${PN[p]}'s two-line stotra from the Panchang (the Navagraha stotra) <b>108 times</b> in the morning. <span class="why">(Vasudev Ch. 8)</span></li>
- ${sp.includes('mrityunjaya')?`<li>📿 <b>Maha Mrityunjaya mantra:</b> recite it daily for protection. <span class="why">(Vasudev Ch. 11)</span></li>`:''}
- ${sp.includes('aditya')?`<li>☀️ <b>Aditya Hrudayam:</b> chant it daily, together with the stotra of your Lagna ruler. <span class="why">(Vasudev, on body and vitality)</span></li>`:''}
- ${sp.includes('children')?`<li>📿 <b>Mrityunjaya japa:</b> Kannan prescribes it (4 lakh times in all) for this children combination. <span class="why">(Kannan Ch. XXI)</span></li>`:''}
- <li>🌾 <b>Daan (donation):</b> on ${DAY[p]}, give <b>${GRAIN[p]}</b> to someone in need, as alms. <span class="why">(Vasudev Ch. 8 · grain from Kannan Table D)</span></li>
- ${sp.includes('drive')?`<li>🚗 <b>Your own conduct:</b> never drive rashly, keep a self speed limit, let others overtake, and avoid driving when you can. <span class="why">(Vasudev Ch. 11)</span></li>`:''}
- ${sp.includes('speech')?`<li>🗣️ <b>Your own conduct:</b> practise calm, gentle speech, especially when you are excited or angry. Set yourself a long time frame for it. <span class="why">(Vasudev Ch. 11)</span></li>`:''}
- <li>🤝 <b>Good deeds:</b> Vasudev says a remedy is a sincere request to God, so it works best alongside honest effort and kindness to others. Awareness of the weak point comes first, then steady practice. <span class="why">(Vasudev Ch. 8, 11)</span></li>
- <li>💎 <b>Gemstone:</b> ${STONE[p]}, only if an astrologer finds it suitable. Vasudev warns that costly gemstones mostly work as a placebo, so don't overspend. <span class="why">(Kannan Table D · Vasudev Ch. 8)</span></li>
+ <li>🙏 <b>Prayer:</b> every <b>${DAY[p]}</b>${['Ra','Ke'].includes(p)?' (common practice: Rahu and Ketu have no weekday of their own)':''}, worship <b>${DEITY[p]}</b>. Offer ${FLOWER[p]}. <span class="why">(remedy texts· Jyotish classics)</span></li>
+ <li>📿 <b>Mantra:</b> recite ${PN[p]}'s two-line stotra from the Panchang (the Navagraha stotra) <b>108 times</b> in the morning. <span class="why">(remedy texts)</span></li>
+ ${sp.includes('mrityunjaya')?`<li>📿 <b>Maha Mrityunjaya mantra:</b> recite it daily for protection. <span class="why">(remedy texts)</span></li>`:''}
+ ${sp.includes('aditya')?`<li>☀️ <b>Aditya Hrudayam:</b> chant it daily, together with the stotra of your Lagna ruler. <span class="why">(remedy texts)</span></li>`:''}
+ ${sp.includes('children')?`<li>📿 <b>Mrityunjaya japa:</b> The classics prescribe it (4 lakh times in all) for this children combination. <span class="why">(Jyotish classics)</span></li>`:''}
+ <li>🌾 <b>Daan (donation):</b> on ${DAY[p]}, give <b>${GRAIN[p]}</b> to someone in need, as alms. <span class="why">(remedy texts· grain from Jyotish classics)</span></li>
+ ${sp.includes('drive')?`<li>🚗 <b>Your own conduct:</b> never drive rashly, keep a self speed limit, let others overtake, and avoid driving when you can. <span class="why">(remedy texts)</span></li>`:''}
+ ${sp.includes('speech')?`<li>🗣️ <b>Your own conduct:</b> practise calm, gentle speech, especially when you are excited or angry. Set yourself a long time frame for it. <span class="why">(remedy texts)</span></li>`:''}
+ <li>🤝 <b>Good deeds:</b> The remedy texts say a remedy is a sincere request to God, so it works best alongside honest effort and kindness to others. Awareness of the weak point comes first, then steady practice. <span class="why">(remedy texts)</span></li>
+ <li>💎 <b>Gemstone:</b> ${STONE[p]}, only if an astrologer finds it suitable. The remedy texts warn that costly gemstones mostly work as a placebo, so don't overspend. <span class="why">(Jyotish classics · remedy texts)</span></li>
  </ul></div>`;return h}
 function remedy(p,why,special){return remedyPlan(p,why,special)}
 
 async function llmAnswer(q,local){const cfg=store.get('mj_llm',{});if(!cfg.url)return null;
  const P=C.P,summary=`Lagna ${SIGNS[C.lagSign]} ${dms(C.lagna%30)}. `+PL.map(p=>`${PN[p]} ${fmtLon(P[p].lon)} house ${P[p].house} ${NAKS[P[p].nak]} ${P[p].dig}${P[p].retro?' R':''}`).join('; ')+'. House lords: '+[...Array(12)].map((_,i)=>`H${i+1} ${SIGNS[houseSign(C,i+1)]} lord ${PN[houseLord(C,i+1)]} in H${P[houseLord(C,i+1)].house}`).join('; ')+`. Dashas: `+DAS.list.slice(0,8).map(m=>`${PN[m.lord]} ${fmtD(m.start)}-${fmtD(m.end)}`).join(', ')+`. Today: ${new Date().toDateString()}.`;
  const ctx=search(q,5).map(p=>`[${chTitle(p.ci)}] ${p.text}`).join('\n\n');
- const msgs=[{role:'system',content:'You are MyJyotish, a friendly astrologer talking to an ordinary person. Use ONLY the chart data and the passages from S. Kannan\'s book provided. Rules: very simple English, no jargon (never say "native", "bhava", "lord", "aspect" without explaining it in plain words), max 120 words. Start with a direct one-line answer, then the best future time window with month-year and the person\'s age, then 2-3 short reasons. Respect the person\'s current age, gender and marital status; never predict things already in the past (e.g. no "early marriage" for someone over 30). Do not contradict yourself; if book rules conflict, say which one applies to this chart. The RULE-ENGINE NOTES are already worked out from the book; follow them.'},
+ const msgs=[{role:'system',content:'You are MyJyotish, a friendly astrologer talking to an ordinary person. Use ONLY the chart data and the classical rules provided. Rules: very simple English, no jargon (never say "native", "bhava", "lord", "aspect" without explaining it in plain words), max 120 words. Start with a direct one-line answer, then the best future time window with month-year and the person\'s age, then 2-3 short reasons. Respect the person\'s current age, gender and marital status; never predict things already in the past (e.g. no "early marriage" for someone over 30). Do not contradict yourself; if book rules conflict, say which one applies to this chart. The RULE-ENGINE NOTES are already worked out from the book; follow them.'},
   ...store.get('mj_chat',[]).slice(-6).map(m=>({role:m.me?'user':'assistant',content:m.plain||''})),
   {role:'user',content:`CHART: ${summary}\n\nBOOK PASSAGES:\n${ctx}\n\nPERSON: age ${Math.floor(ageAt(jdNow()))}, ${PROFILE.gender||'male'}, ${PROFILE.status||'single'}.\n\nRULE-ENGINE NOTES: ${local.speak}\n\nQUESTION: ${q}`}];
  try{const r=await fetch(cfg.url.replace(/\/$/,'')+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json',...(cfg.key?{Authorization:'Bearer '+cfg.key}:{})},body:JSON.stringify({model:cfg.model||'default',messages:msgs,temperature:.4})});
@@ -1419,8 +1418,9 @@ function addMsg(me,html,plain){const d=document.createElement('div');d.className
 const GUIDE_URL=location.hostname.endsWith('pages.dev')?'/api/guide':'';let SAMPLE=null;(async()=>{try{if(window.claude&&claude.use)SAMPLE=await claude.use('sample')}catch(e){SAMPLE=null}
  if(!SAMPLE&&GUIDE_URL)SAMPLE=async(messages,opts={})=>{const r=await fetch(GUIDE_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages})});if(!r.ok)throw{code:'http_'+r.status};const j=await r.json();opts.onText&&opts.onText({text:j.text});return{text:j.text}}})();
 function factsOf(html){const d=document.createElement('div');d.innerHTML=html;d.querySelectorAll('details').forEach(x=>{if(/other rules checked|own words/i.test(x.querySelector('summary')?.textContent||''))x.remove()});d.style.position='absolute';d.style.left='-9999px';document.body.appendChild(d);const t=d.innerText;d.remove();return t.replace(/\n{2,}/g,'\n').slice(0,5000)}
-const GUIDE_SYS=`You are MyJyotish, a warm, wise and honest Vedic astrology guide, like a trusted family astrologer who is also a kind mentor. You are given FACTS that a rule engine has already worked out from the person's chart and from classical books (Kannan, Parashara, Phaladeepika, Raman, Varahamihira, Vasudev, Prasna Marga). Your job is ONLY to explain those facts to the person in a human, caring, easy way.
+const GUIDE_SYS=`You are MyJyotish, a warm, wise and honest Vedic astrology guide, like a trusted family astrologer who is also a kind mentor. You are given FACTS that a rule engine has already worked out from the person's chart and from classical books (Parashara, Phaladeepika, Varahamihira, Prasna Marga and other classical texts). Your job is ONLY to explain those facts to the person in a human, caring, easy way.
 STRICT RULES:
+- When you mention a source, name only the classical texts (Parashara, Phaladeepika, Varahamihira, Prasna Marga) or say "the classical texts". Never name any modern author, translator or modern book.
 - Use ONLY the facts given. Never add a prediction, date, yoga, remedy or claim that is not in the facts. Never change a verdict or a date.
 - If the facts contain good and challenging points, say both honestly, good first, then the caution with what they can do.
 - Very simple English that a 12th-pass reader understands. No jargon; if you must use a term (dasha, Lagna), explain it in a few words.
@@ -1434,13 +1434,13 @@ STRICT RULES:
 - Never predict death, never give medical or legal instructions; for health, money or legal decisions add one line to also consult a qualified professional.`;
 function transitFacts(){if(!C)return'';const T=castChart({jd:jdNow(),lat:C.lat,lon:C.lon,ayan:PROFILE.ayan==='tropical'?'lahiri':PROFILE.ayan}),f=p=>(T.P[p].sign-C.P.Mo.sign+12)%12+1,out=[];
  const ben={Ju:[2,5,7,9,10,11]},mal=[3,6,11];
- const j=f('Ju');out.push(`Jupiter now transits the ${ordinalT(j)} sign from the Moon: ${[2,5,7,9,10,11].includes(j)?'good results like happiness, promotion and money (Kannan Ch. XXXI)':[1,4,8,12].includes(j)?'bad results: some harm and obstacles (Kannan Ch. XXXI)':'indifferent results (Kannan Ch. XXXI)'}.`);
- const sa=f('Sa');out.push(`Saturn now transits the ${ordinalT(sa)} sign from the Moon: ${[2,3,6,11].includes(sa)?'good results (Kannan Ch. XXXI)':[12,1,2].includes(sa)?'Sade Sati is running: worries, quarrels and obstacles for this period (Kannan Ch. XXXI)':sa===8?'the 8th: mental, physical and money strain (Kannan Ch. XXXI)':[4].includes(sa)?'bad results (Kannan Ch. XXXI)':'mixed results'}.`);
- const ra=f('Ra');out.push(`Rahu now transits the ${ordinalT(ra)} sign from the Moon: ${[2,3,6,11].includes(ra)?'good results (Kannan Ch. XXXI: Rahu acts like Mars, and harsh planets do well in the 2nd, 3rd, 6th and 11th)':[1,4,8,12].includes(ra)?'bad results (Kannan Ch. XXXI: harsh planets give bad results in the 1st, 4th, 8th and 12th)':'no specific result given in the book'}.`);
+ const j=f('Ju');out.push(`Jupiter now transits the ${ordinalT(j)} sign from the Moon: ${[2,5,7,9,10,11].includes(j)?'good results like happiness, promotion and money (Jyotish classics)':[1,4,8,12].includes(j)?'bad results: some harm and obstacles (Jyotish classics)':'indifferent results (Jyotish classics)'}.`);
+ const sa=f('Sa');out.push(`Saturn now transits the ${ordinalT(sa)} sign from the Moon: ${[2,3,6,11].includes(sa)?'good results (Jyotish classics)':[12,1,2].includes(sa)?'Sade Sati is running: worries, quarrels and obstacles for this period (Jyotish classics)':sa===8?'the 8th: mental, physical and money strain (Jyotish classics)':[4].includes(sa)?'bad results (Jyotish classics)':'mixed results'}.`);
+ const ra=f('Ra');out.push(`Rahu now transits the ${ordinalT(ra)} sign from the Moon: ${[2,3,6,11].includes(ra)?'good results (Jyotish classics: Rahu acts like Mars, and harsh planets do well in the 2nd, 3rd, 6th and 11th)':[1,4,8,12].includes(ra)?'bad results (Jyotish classics: harsh planets give bad results in the 1st, 4th, 8th and 12th)':'no specific result given in the book'}.`);
  return out.join('\n')}
 function extraFacts(){if(!C)return'';let t='';try{t+='\n\nCURRENT PERIOD (DASHA) FACTS:\n'+factsOf(dashaRuleAnswer().html).slice(0,1500)}catch(e){}
  try{t+='\n\nCURRENT TRANSITS (GOCHARA):\n'+transitFacts()}catch(e){}
- try{const Y=yogaList();if(Y.length)t+='\n\nYOGAS IN THE CHART (Raman, 300 Combinations): '+Y.map(y=>`${y.name} (${y.good?'supportive':'challenging'}: ${y.res})`).join('; ')}catch(e){}
+ try{const Y=yogaList();if(Y.length)t+='\n\nYOGAS IN THE CHART (Jyotish classics): '+Y.map(y=>`${y.name} (${y.good?'supportive':'challenging'}: ${y.res})`).join('; ')}catch(e){}
  return t}
 async function guideText(q,local,onText){if(!SAMPLE)return null;const P=/^About the couple/.test(q)?{name:'the couple'}:(PROFILE||{});const age=C?Math.floor(ageAt(jdNow())):'';
  const input=`PERSON: ${P.name||'the person'}, ${P.gender||''}, ${P.status||''}${age?`, age ${age}`:''}. Today: ${new Date().toDateString()}.\nQUESTION: ${q}\nMAIN FACTS for this question (from the rule engine; do not go beyond any facts below):\n${factsOf(local.html)}${/^About the couple/.test(q)?'':extraFacts()}`;
@@ -1487,7 +1487,7 @@ $('q').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.prevent
 $('clearChat').onclick=()=>{store.set('mj_chat',[]);$('msgs').innerHTML='';greet()};
 function renderChips(){const qs=['Should I buy a car this Sunday?','Best date to buy a flat?','When will I get married?','How is my career?','Will I settle abroad?','Which work or business suits me?','What does my dasha mean?','How will my finances be?','Match two kundlis'];
  $('chips').innerHTML=qs.map(x=>`<span class="chip">${x}</span>`).join('');$('chips').onclick=e=>{if(e.target.classList.contains('chip'))ask(e.target.textContent)}}
-function greet(){addMsg(false,`<h4>Namaste${PROFILE?', '+esc(PROFILE.name):''} 🙏</h4>Ask about any part of your life in simple words, for example <i>"When will I marry?"</i>, <i>"Is my career good?"</i>, <i>"Will I go abroad?"</i> or <i>"Which dasha am I in?"</i>. Every answer is worked out only from the rules in your books (Kannan, Phaladeepika, Raman, Varahamihira, Vasudev), and each rule used is shown. To speak instead of typing, tap the question box and use your keyboard's 🎤 key.`,'greeting')}
+function greet(){addMsg(false,`<h4>Namaste${PROFILE?', '+esc(PROFILE.name):''} 🙏</h4>Ask about any part of your life in simple words, for example <i>"When will I marry?"</i>, <i>"Is my career good?"</i>, <i>"Will I go abroad?"</i> or <i>"Which dasha am I in?"</i>. Every answer is worked out only from the rules in your books (Parashara, Phaladeepika, Varahamihira and other classical texts), and each rule used is shown. To speak instead of typing, tap the question box and use your keyboard's 🎤 key.`,'greeting')}
 /* voice */
 const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let rec=null,recOn=false;
 $('micBtn').onclick=()=>{if(!SR){addMsg(false,'<b>Voice input is not available here.</b> Tap the question box and use the 🎤 key on your phone keyboard to speak your question.','no sr');return}
