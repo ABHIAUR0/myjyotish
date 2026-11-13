@@ -1,5 +1,5 @@
 // MyJyotish guide — Cloudflare Pages Function. Env secret: GEMINI_KEY (Google AI Studio, free tier).
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-3.8-flash';
 export async function onRequestPost({ request, env }) {
   const origin = request.headers.get('Origin') || '';
   if (!/^https:\/\/([a-z0-9-]+\.)?myjyotish\.pages\.dev$/.test(origin)) return new Response('Forbidden', { status: 403 });
