@@ -152,6 +152,17 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
 .why{color:var(--ink3);font-size:13px}
 .guide{font-size:16px;line-height:1.65}.guide b{color:var(--gold2)}
 .shareBar{margin-top:10px;gap:6px}.shareBar a.btn{text-decoration:none}.sumBox{border-left-color:var(--jade)}
+.tabs.pulse .tab{animation:tabGlow 1.6s ease-in-out 3}
+@keyframes tabGlow{0%,100%{box-shadow:none}50%{box-shadow:0 0 0 2px var(--gold),0 0 18px rgba(245,213,138,.55)}}
+.readyBar{display:flex;gap:10px;align-items:center;margin:0 0 12px;padding:12px 14px;border:1px solid var(--gold);border-radius:12px;background:linear-gradient(90deg,rgba(227,176,75,.18),rgba(227,176,75,.04));font-size:14.5px;animation:rbIn .5s ease}
+.readyBar b{color:var(--gold2)}
+@keyframes rbIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.spark{position:fixed;width:6px;height:6px;border-radius:50%;background:radial-gradient(#fff6d6,#e3b04b);pointer-events:none;z-index:9999;animation:spk .9s ease-out forwards}
+@keyframes spk{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
+.shake{animation:shk .4s}
+@keyframes shk{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+.needfix{outline:2px solid var(--rose)!important;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.tabs.pulse .tab,.readyBar,.spark,.shake{animation:none}}
 </style>
 </head>
 <body>
@@ -258,18 +269,16 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
   <section class="view" id="v-about"><div class="card">
     <h2>About MyJyotish</h2>
     <p class="big" style="font-size:16.5px">MyJyotish is a Vedic astrology guide for everyone. It answers your questions about marriage, career, money, health, property, children, travel, good dates and kundli matching in simple words. Every answer is worked out <b>only from the rules of classical astrology books</b>, explained in MyJyotish's own words, and the book and chapter for each rule are shown.</p>
-    <h3>Developed by Amitava Chandra</h3>
-    <div class="reading"><p style="margin:0">Mr. Amitava Chandra is an electrical engineer from <b>BIT Mesra</b>. He spent <b>29 years at Tata Steel</b>, then served as <b>General Manager</b> of the Jaypee Group's thermal power plant in Prayagraj and as <b>Vice President</b> at Kanpur Fertilizers &amp; Chemicals Ltd (Jaypee Group). His last role was Vice President at Mannu Kabir.</p>
-    <p style="margin:8px 0 0">After a lifetime of engineering, he built MyJyotish with the same discipline: rules first, facts checked, and everything explained clearly, so that the wisdom of Jyotish reaches ordinary people honestly. The same approach is behind his app <b>Gita Sarathi</b>.</p></div>
+    <h3>Developed by Gita Sarathi Ventures</h3>
     <h3>The books behind the answers</h3>
     <ul class="simple"><li>📘 S. Kannan, <i>Fundamentals of Hindu Astrology</i></li><li>📘 Maharishi Parashara, <i>Brihat Parashara Hora Shastra</i></li><li>📘 Mantreswara, <i>Phaladeepika</i></li><li>📘 B.V. Raman, <i>How to Judge a Horoscope</i> (Vol. 1 &amp; 2), <i>Three Hundred Important Combinations</i> and <i>Muhurtha</i></li><li>📘 Varahamihira, <i>Brihat Jataka</i></li><li>📘 Panangadu Nambudhiri, <i>Prasna Marga</i></li><li>📘 Chennareddy Vasudev, <i>Astrology</i> (remedies)</li><li>📚 Studied for reference: <i>Saravali</i>, <i>Jataka Parijata</i>, <i>Uttara Kalamrita</i></li></ul>
     <h3>Our promise</h3>
     <ul class="simple"><li>✅ No made-up predictions: every point comes from a book rule, with its source.</li><li>✅ Honest and kind: good and difficult points are both stated plainly.</li><li>✅ No fear: MyJyotish never predicts death, and it does not show yogas linked to death, crime or disease.</li><li>✅ Your data stays on your device: birth details are saved only in your own browser.</li></ul>
     <p class="muted small">Astrology is guidance, not certainty. Results depend on an exact birth time and place. For health, legal or money decisions, please also consult a qualified professional.</p>
-    <h3>Ownership</h3><p>Software, design, calculations and explanations © 2026 Amitava Chandra. The astrological rules are drawn from classical texts, which are credited in the Sources tab and in every answer.</p>
+    <h3>Ownership</h3><p>Software, design, calculations and explanations © 2026 Gita Sarathi Ventures. The astrological rules are drawn from classical texts, which are credited in the Sources tab and in every answer.</p>
     <h3>Daily limit</h3><p>Each device gets <b>5 free answers a day</b> (questions, good-date searches, kundli matches and Prashna). Your chart, dashas, readings and Panchang are always free to view.</p>
-    <h3>Contact</h3><p>📧 <span style="user-select:all">bapi_62@yahoo.com</span></p>
-    <p class="muted small">© 2026 Amitava Chandra · MyJyotish</p>
+    <h3>Contact</h3><p>📧 <a href="mailto:geetasarathii@gmail.com" style="color:var(--gold);user-select:all">geetasarathii@gmail.com</a></p>
+    <p class="muted small">© 2026 Gita Sarathi Ventures · MyJyotish</p>
   </div></section>
   <section class="view" id="v-lib"><div class="card">
     <h2>Sources</h2>
@@ -297,7 +306,7 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
   <label>Model</label><input id="llmModel" placeholder="e.g. llama-3.3-70b-versatile">
   <div class="flex" style="margin-top:14px"><button class="btn gold" id="llmSave">Save</button><button class="btn" id="llmClose">Close</button></div>
 </div></div>
-<footer class="muted small" style="text-align:center;padding:10px 16px 24px;position:relative;z-index:1">MyJyotish · Developed by <b>Amitava Chandra</b> · <a href="#" onclick="showTab('about');scrollTo(0,0);return false" style="color:var(--gold)">About</a></footer>
+<footer class="muted small" style="text-align:center;padding:10px 16px 24px;position:relative;z-index:1">MyJyotish · Developed by <b>Gita Sarathi Ventures</b> · <a href="#" onclick="showTab('about');scrollTo(0,0);return false" style="color:var(--gold)">About</a></footer>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -485,11 +494,21 @@ $('clearBtn').onclick=()=>{['fName','fDate','fTime','fPlace','fLat','fLon'].forE
 $('fStyle').onchange=()=>{if(C){PROFILE.style=$('fStyle').value;renderKundli();renderToday()}};
 $('fAyan').onchange=()=>{if(C){cast();toast($('fAyan').value==='tropical'?'Western (tropical) zodiac: note that your books\' rules are written for the Vedic (sidereal) zodiac':'Report recalculated with '+$('fAyan').selectedOptions[0].text)}};
 
-function cast(){const p=readForm();if(!p.date){toast('Enter date of birth');return}if(isNaN(p.lat)||isNaN(p.lon)){toast('Pick your birth city from the list (or type latitude & longitude)');$('fPlace').focus();return}
+/* ---- sounds & feedback ---- */
+let AC=null;function sfx(kind){try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();const t0=AC.currentTime;
+ const tone=(f,st,dur,type,vol)=>{const o=AC.createOscillator(),g=AC.createGain();o.type=type;o.frequency.setValueAtTime(f,t0+st);g.gain.setValueAtTime(0,t0+st);g.gain.linearRampToValueAtTime(vol,t0+st+.02);g.gain.exponentialRampToValueAtTime(.0001,t0+st+dur);o.connect(g).connect(AC.destination);o.start(t0+st);o.stop(t0+st+dur+.05)};
+ if(kind==='ok'){[[784,0],[988,.12],[1175,.24],[1568,.38]].forEach(([f,st])=>{tone(f,st,1.2,'sine',.16);tone(f*2,st,.6,'sine',.03)})}
+ else{tone(330,0,.22,'triangle',.22);tone(247,.2,.35,'triangle',.22);try{navigator.vibrate&&navigator.vibrate([80,60,80])}catch(e){}}}catch(e){}}
+function sparkle(el){if(matchMedia('(prefers-reduced-motion: reduce)').matches||!el)return;const r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;
+ for(let i=0;i<22;i++){const d=document.createElement('span');d.className='spark';const a=Math.random()*Math.PI*2,m=40+Math.random()*70;d.style.left=cx+'px';d.style.top=cy+'px';d.style.setProperty('--dx',Math.cos(a)*m+'px');d.style.setProperty('--dy',Math.sin(a)*m+'px');document.body.appendChild(d);setTimeout(()=>d.remove(),950)}}
+function formError(msg,el){toast(msg);sfx('err');const f=el||$('castBtn');f.classList.remove('shake');void f.offsetWidth;f.classList.add('shake');if(el){el.classList.add('needfix');el.focus();el.addEventListener('input',()=>el.classList.remove('needfix'),{once:true});el.addEventListener('change',()=>el.classList.remove('needfix'),{once:true})}}
+function chartReady(name){sfx('ok');sparkle($('castBtn'));showTab('kundli');const box=$('kundliBox');const bar=document.createElement('div');bar.className='readyBar';bar.innerHTML=`<span style="font-size:22px">✅</span><span><b>${name==='You'?'Your':esc(name)+'\'s'} chart is ready.</b> Look below, or tap <b>Book Readings</b>, <b>Dasha</b> and <b>Ask Jyotish</b> in the menu above.</span>`;box.prepend(bar);
+ const tb=$('tabs');tb.classList.remove('pulse');void tb.offsetWidth;tb.classList.add('pulse');setTimeout(()=>tb.scrollIntoView({behavior:'smooth',block:'start'}),350)}
+function cast(){const p=readForm();if(!p.date){formError('Please enter the date of birth',$('fDate'));return}if(!$('fTime').value){formError('Please enter the time of birth (if unknown, type 12:00)',$('fTime'));return}if(isNaN(p.lat)||isNaN(p.lon)){formError('Please pick your birth city from the list (or type latitude & longitude)',$('fPlace'));return}
  if($('fPlace').dataset.iana){const tz=tzOffsetFor($('fPlace').dataset.iana,p.date,p.time);if(tz!=null){p.tz=tz;$('fTz').value=tz}}
  if(isNaN(p.tz))p.tz=5.5;
  PROFILE=p;C=castChart({jd:jdFromLocal(p.date,p.time,p.tz),lat:p.lat,lon:p.lon,ayan:p.ayan});DAS=dashas(C);store.set('mj_last',p);
- renderKundli();renderReadings();renderDasha();renderChips();toast(`Chart cast for ${p.name}`)}
+ renderKundli();renderReadings();renderDasha();renderChips();toast(`Chart cast for ${p.name}`);chartReady(p.name||'Your')}
 
 /* ================= CHART DRAWING ================= */
 function cellContents(C,sign,useNav){const arr=[];for(const p of PL){const s=useNav?C.P[p].nav:C.P[p].sign;if(s===sign)arr.push(p+(C.P[p].retro&&p!=='Ra'&&p!=='Ke'?'ᴿ':''))}return arr}
@@ -1289,7 +1308,7 @@ function personChart(pre){const name=$(pre+'Name').value.trim()||(pre==='b'?'Boy
 function fillPickers(){const ps=store.get('mj_profiles',[]);const o='<option value="">— choose —</option>'+ps.map((p,i)=>`<option value="${i}">${esc(p.name)} (${p.date})</option>`).join('');['bPick','gPick'].forEach(id=>$(id).innerHTML=o)}
 ['b','g'].forEach(k=>$(k+'Pick').onchange=e=>{const p=store.get('mj_profiles',[])[+e.target.value];if(!p)return;$(k+'Name').value=p.name;$(k+'Date').value=p.date;$(k+'Time').value=p.time;$(k+'City').value=`${(+p.lat).toFixed(4)},${(+p.lon).toFixed(4)}`;});
 $('kClear').onclick=()=>{$('kAskBox').style.display='none';$('kAns').innerHTML='';LASTMATCH=null;['bName','bDate','bTime','bCity','gName','gDate','gTime','gCity'].forEach(id=>$(id).value='');$('kOut').innerHTML='';$('bName').focus()};
-$('kMatch').onclick=()=>{if(!useQuota())return;try{const b=personChart('b'),g=personChart('g');const mh=matchHTML(b.name,g.name,b.X,g.X);LASTMATCH={b,g,mh};withGuide($('kOut'),`Kundli matching for ${b.name} and ${g.name}: is it a good match?`,mh);$('kAskBox').style.display='block';$('kChips').innerHTML=['Will they be happy together?','When should they marry?','Any second-marriage signs for either?','What should they be careful about?'].map(x=>`<span class="chip">${x}</span>`).join('');$('kChips').onclick=e=>{if(e.target.classList.contains('chip')){$('kQ').value=e.target.textContent;askCouple()}}}catch(e){$('kOut').innerHTML=`<p class="muted">${esc(String(e))}</p>`}};
+$('kMatch').onclick=()=>{if(!useQuota())return;try{const b=personChart('b'),g=personChart('g');const mh=matchHTML(b.name,g.name,b.X,g.X);LASTMATCH={b,g,mh};withGuide($('kOut'),`Kundli matching for ${b.name} and ${g.name}: is it a good match?`,mh);$('kAskBox').style.display='block';$('kChips').innerHTML=['Will they be happy together?','When should they marry?','Any second-marriage signs for either?','What should they be careful about?'].map(x=>`<span class="chip">${x}</span>`).join('');$('kChips').onclick=e=>{if(e.target.classList.contains('chip')){$('kQ').value=e.target.textContent;askCouple()}}}catch(e){$('kOut').innerHTML=`<p class="muted">${esc(String(e))}</p>`;sfx('err')}};
 /* Ask: timing questions */
 const MU_INT=[['vehicle',/\b(car|bike|scooter|scooty|vehicle|gaadi|gadi|two.?wheeler|suv|motorcycle)\b/],['griha',/griha ?pravesh|move into|shift(ing)? (in)?to|house ?warming|enter (the |my |a )?new (house|home|flat)/],['house',/\b(flat|apartment|house|home|villa|bungalow)\b/],['land',/\b(land|plot|real estate|property|jameen|jomi|zameen)\b/],['business',/\b(business|shop|startup|venture|company|firm|dukan|store)\b/],['sell',/\bsell|selling\b/],['lend',/\blend|give (a )?loan\b/],['borrow',/\bborrow|take (a )?loan|apply for (a )?loan\b/],['journey',/\b(travel|journey|trip|flight|tour|yatra)\b/],['surgery',/\b(surgery|operation|operate)\b/],['delivery',/\b(delivery|c.?section|caesarean|cesarean|baby.{0,15}born|give birth)\b/],['treatment',/\b(hospital|admit|treatment|doctor|medicine|therapy)\b/],['clothes',/\b(jewel|jewellery|jewelry|gold|ornament|new clothes|saree|dress)\b/],['exam',/\b(exam|interview|competition|test|contest)\b/],['marriage',/\b(wedding date|marriage date|date for (my )?(wedding|marriage)|shaadi (ki )?date|biyer date)\b/]];
 const TIMEQ=/should i|good (day|time|date)|best (day|time|date)|right (day|time)|muhur|mahurat|shubh|auspicious|which (day|date)|when (to|should)|today|tomorrow|this (sun|mon|tue|wed|thu|fri|sat)|next (sun|mon|tue|wed|thu|fri|sat|week|month)|coming (sun|mon|tue|wed|thu|fri|sat|week)|on (sun|mon|tue|wed|thu|fri|sat)|\bon \d|\d{1,2}[\/\-]\d{1,2}|can i (buy|go|start|sell|book)|is it (good|ok|fine)|plan(ning)? (to|for)/;
